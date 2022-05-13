@@ -4,15 +4,11 @@ This library is a clone of the original javascript [implementation from Paylike]
 ```kotlin
 // Is the card number valid?
 var card = '6123451234567893';
-var luhn = PaylikeLuhn();
-luhn.isValid(card);	// true
-
+var result = PaylikeLuhn.isValid(card); // true
 
 // Calculate check digit
 // MII + IIN + "Individual account number"
-var incomplete = '612345123456789';
-
-luhn.calculateCheckDigit(incomplete);	// "3"
+var checksum = PaylikeLuhn.calculateCheckDigit(card);	// "3"
 ```
 
 Implemented according to ISO/IEC 7812-1:2015(E) which goes:
