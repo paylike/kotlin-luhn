@@ -1,6 +1,6 @@
 package hu.riltech.kotlin_luhn
 
-import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 /**
@@ -40,11 +40,14 @@ class PaylikeLuhnTest {
             "4571736004738485"
         )
         pans.forEach {
-            assertEquals(PaylikeLuhn.isValid(it), true)
-            assertEquals(PaylikeLuhn.calculateCheckDigit(it), it.substring(it.length - 1))
+            val result = PaylikeLuhn.isValid(it)
+            assertTrue(result)
+            val calculatedChecksum = PaylikeLuhn.calculateCheckDigit(it)
+            val givenChecksum = it.substring(it.length - 1)
+            assertTrue(calculatedChecksum == givenChecksum)
         }
         invalid.forEach {
-            assertEquals(PaylikeLuhn.isValid(it), false)
+            assertTrue(!PaylikeLuhn.isValid(it))
         }
     }
 }
