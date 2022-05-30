@@ -1,5 +1,9 @@
 # Calculate/verify check digit (luhn) of credit cards
 
+<a href="https://jitpack.io/#paylike/kotlin_luhn" target="_blank">
+    <img src="https://jitpack.io/v/paylike/kotlin_luhn.svg" />
+</a>
+
 This library is a clone of the original javascript [implementation from Paylike](https://github.com/paylike/luhn).
 ```kotlin
 // Is the card number valid?
