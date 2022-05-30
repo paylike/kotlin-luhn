@@ -46,7 +46,7 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.paylike'
-                artifactId = 'kotlin-luhn'
+                artifactId = 'kotlin_luhn'
                 version = '1.0.4'
             }
         }

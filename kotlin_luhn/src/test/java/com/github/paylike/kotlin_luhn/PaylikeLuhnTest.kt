@@ -1,4 +1,4 @@
-package hu.riltech.kotlin_luhn
+package com.github.paylike.kotlin_luhn
 
 import org.junit.Assert.assertTrue
 import org.junit.Test

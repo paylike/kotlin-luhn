@@ -1,4 +1,4 @@
-package hu.riltech.kotlin_luhn
+package com.github.paylike.kotlin_luhn
 
 object PaylikeLuhn {
     /// isValid decides if [cardNumber] is valid or not

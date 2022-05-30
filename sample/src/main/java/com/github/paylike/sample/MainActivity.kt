@@ -1,10 +1,9 @@
-package hu.riltech.sample
+package com.github.paylike.sample
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import hu.riltech.kotlin_luhn.PaylikeLuhn
+import com.github.paylike.kotlin_luhn.PaylikeLuhn
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
