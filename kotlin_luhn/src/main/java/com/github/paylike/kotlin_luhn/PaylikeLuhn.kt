@@ -1,22 +1,29 @@
 package com.github.paylike.kotlin_luhn
 
 object PaylikeLuhn {
-    /// isValid decides if [cardNumber] is valid or not
+    /**
+     * isValid decides if [cardNumber] is valid or not
+     */
     fun isValid(cardNumber: String): Boolean {
         return cardNumber.substring(cardNumber.length - 1) ==
                 _calculate(cardNumber.substring(0, cardNumber.length - 1))
     }
-    /// calculateCheckDigit will return the check digit of [cardNumber]
+
+    /**
+     * calculateCheckDigit will return the check digit of [cardNumber]
+     */
     fun calculateCheckDigit(cardNumber: String): String
     {
         return _calculate(cardNumber.substring(0, cardNumber.length - 1))
     }
+
     private fun _sumDigits(number: String): Int
     {
         return number.split("")
             .filter { it.isNotEmpty() }
             .fold ("0") { acc, curr -> "${acc.toInt() + curr.toInt()}" }.toInt()
     }
+
     private fun _calculate(numbers: String): String
     {
         val length = numbers.length
