@@ -42,7 +42,7 @@ afterEvaluate {
 
                 groupId = 'com.github.paylike'
                 artifactId = 'kotlin_luhn'
-                version = '1.0.5'
+                version = '1.0.4'
             }
         }
     }
