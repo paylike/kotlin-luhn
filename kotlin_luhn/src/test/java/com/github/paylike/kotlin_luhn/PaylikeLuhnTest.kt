@@ -3,19 +3,18 @@ package com.github.paylike.kotlin_luhn
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class PaylikeLuhnTest {
     @Test
     fun test() {
         val pans: List<String> = listOf(
-            // from the ISO standard
+            /**
+             * From the ISO standard
+             */
             "6123451234567893",
 
-            // http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
+            /**
+             * http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
+             */
             "4012111111111111",
             "378282246310005",
             "371449635398431",
