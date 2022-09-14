@@ -1,4 +1,6 @@
-# Calculate/verify check digit (luhn) of credit cards
+# Paylike's luhn implementation in kotlin
+
+## Calculate/verify check digit (luhn) of credit cards
 
 <a href="https://jitpack.io/#paylike/kotlin_luhn" target="_blank">
     <img src="https://jitpack.io/v/paylike/kotlin_luhn.svg" />
@@ -19,7 +21,7 @@ val result = PaylikeLuhn.isValid(card) // true
  * Calculate check digit
  * MII + IIN + "Individual account number"
  */
-val checksum = PaylikeLuhn.calculateCheckDigit(card)	// "3"
+val checksum = PaylikeLuhn.calculateCheckDigit(card) // "3"
 ```
 
 Implemented according to ISO/IEC 7812-1:2015(E) which goes:
