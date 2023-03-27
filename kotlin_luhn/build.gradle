@@ -6,10 +6,10 @@ plugins {
 }
 
 android {
-	compileSdk 32
+	compileSdk 33
 	defaultConfig {
 		minSdk 26
-		targetSdk 31
+		targetSdk 33
 	}
 	buildTypes {
 		release {
@@ -23,6 +23,7 @@ android {
 	kotlinOptions {
 		jvmTarget = '1.8'
 	}
+	namespace 'com.github.paylike.kotlin_luhn'
 }
 
 dependencies {
@@ -53,7 +54,7 @@ afterEvaluate {
 
 				groupId = 'com.github.paylike'
 				artifactId = 'kotlin_luhn'
-				version = '1.0.6'
+				version = '1.0.7'
 			}
 		}
 	}
