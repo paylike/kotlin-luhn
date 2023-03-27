@@ -5,8 +5,8 @@
 <a href="https://jitpack.io/#paylike/kotlin_luhn" target="_blank">
     <img src="https://jitpack.io/v/paylike/kotlin_luhn.svg" />
 </a>
-<a href="https://github.com/kocsislaci/kotlin-luhn/actions/workflows/AssembleOnMain.yml" target="_blank">
-    <img src="https://github.com/kocsislaci/kotlin-luhn/actions/workflows/AssembleOnMain.yml/badge.svg?branch=main" />
+<a href="/../../actions/workflows/AssembleOnMain.yml" target="_blank">
+    <img src="/../../actions/workflows/AssembleOnMain.yml/badge.svg?branch=main" />
 </a>
 
 This library is a clone of the original javascript [implementation from Paylike](https://github.com/paylike/luhn).
